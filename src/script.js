@@ -99,4 +99,37 @@ document.querySelector("#student-list").addEventListener("click", (e) =>{
     }
 });
 
-// Create
+// Create and export mysql connection object
+/*
+const mysql = require("mysql");clearFields
+
+let db_con = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: ' '
+});
+
+db_con.connect((err) => {
+    if(error) {
+        showAlert("Database Connection Failed", "danger");
+    }
+    else {
+        showAlert("Connected to Database", "success");
+    }
+});
+
+module.exports = db_con;
+
+const express = require("express");
+const database = require('./sqlConnection');
+
+const app = expres();
+
+app.listen(5000, () => {
+    showAlert("Server is up to running on  5000...", "update");
+});
+
+app.get("/createDatabase", (req, res) => {
+
+    let database 
+}) */
